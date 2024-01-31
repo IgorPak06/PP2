@@ -1,0 +1,9 @@
+def solve(numheads, numlegs):
+    r = (numlegs - 2 * numheads) / 2
+    c = numheads - r
+    print("Number of rabbits = ", r)
+    print("Number of chickens = ", c)
+
+h = 35
+l = 94
+solve(h, l)

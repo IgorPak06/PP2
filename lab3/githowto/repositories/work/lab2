@@ -1,0 +1,6 @@
+def Centigrade(F):
+    c = (5 / 9) * (F - 32)
+    print(c)
+
+x = int(input())
+Centigrade(x)

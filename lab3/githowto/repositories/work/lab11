@@ -1,0 +1,11 @@
+def is_palindrome(word):
+    polished = ''.join(word.lower().split())
+
+    return polished == polished[::-1]
+
+x = input()
+
+if is_palindrome(x):
+    print("Yes, is palindrome")
+else:
+    print("No, it's not")

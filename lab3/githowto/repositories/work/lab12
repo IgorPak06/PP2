@@ -1,0 +1,14 @@
+def histogram(numbers):
+    length = len(numbers)
+    initial = 0
+    while initial < length:
+        i = 0
+        while i < numbers[initial]:
+            print("*", end='')
+            i += 1
+            if i == numbers[initial]:
+                print()
+        initial += 1
+
+numbers = [4,8,5]
+histogram(numbers)

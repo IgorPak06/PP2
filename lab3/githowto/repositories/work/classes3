@@ -1,0 +1,29 @@
+class Shape():
+    def __init__(self):
+        pass
+    def area(self):
+        return 0
+    
+class Square(Shape):
+    def __init__(self, length):
+        super().__init__()
+        self.length = length
+
+    def area(self):
+        return self.length ** 2
+    
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        super().__init__()
+        self.length = length
+        self.width = width
+
+    def compute_area(self):
+        return self.length * self.width
+    
+if __name__ == "__main__":
+    length = float(input())
+    width = float(input())
+    rectangle = Rectangle(length, width)
+
+    print(rectangle.compute_area())

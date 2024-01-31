@@ -1,0 +1,10 @@
+def get_permutation(s, current=""):
+    if not s:
+        print(current)
+    else:
+        for i in range(len(s)):
+            reamining_chars = s[:i] + s[i+1:]
+            get_permutation(reamining_chars, current + s[i])
+
+x = input()
+get_permutation(x)

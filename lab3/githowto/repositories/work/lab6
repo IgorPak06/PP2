@@ -1,0 +1,21 @@
+def reversed_words(sentence):
+    word = []
+    current_word = ""
+
+    for char in sentence:
+        if char.isspace():
+            if current_word:
+                word.append(current_word)
+                current_word = ""
+        else:
+            current_word += char
+
+    if current_word:
+        word.append(current_word)
+    
+    reversed_words = " ".join(reversed(word))
+    return reversed_words
+
+x = input()
+result = reversed_words(x)
+print(result)
