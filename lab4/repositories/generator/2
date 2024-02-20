@@ -1,0 +1,12 @@
+def generate_even(N):
+    for i in range(N + 1):
+        if i % 2 == 0:
+            yield i
+        else:
+            continue
+
+n = int(input())
+evens = generate_even(n)
+
+for j in evens:
+    print(j)

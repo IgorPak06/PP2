@@ -1,0 +1,9 @@
+def reverse_sequence(N):
+    for i in range(N, 0, -1):
+        yield i
+
+Num = int(input())
+result = reverse_sequence(Num)
+
+for x in result:
+    print(x)

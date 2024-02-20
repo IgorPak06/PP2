@@ -1,0 +1,9 @@
+def generate_square(Num):
+    for i in range(Num + 1):
+        yield i**2
+
+N = int(input())
+square = generate_square(N)
+
+for j in square:
+    print(j)
