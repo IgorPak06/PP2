@@ -19,7 +19,7 @@ class Account:
     def show(self):
         print("Bank account amount:", self.balance)
 
-account_owner = input("Enter account owner's name: ")
+account_owner = input("Enter account owner's name:x ")
 account = Account(owner=account_owner)
 
 while True:

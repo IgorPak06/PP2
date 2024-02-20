@@ -1,0 +1,17 @@
+def isPrime(num):
+    if (num < 2):
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+x = int(input("Write the size of list = "))
+primes = []
+for i in range(x):
+    a = int(input())
+    primes.append(a)
+
+prime_number = list(filter(lambda y: isPrime(y), primes))
+
+print(prime_number)
