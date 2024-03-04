@@ -1,0 +1,16 @@
+def func(file_path, data):
+    with open(file_path, 'w') as file:
+        for i in data:
+            file.write(str(i) + '\n')
+
+if __name__ == "__main__":
+    listed = []
+    a = int(input("Write size of the list: "))
+    for i in range(a):
+        b = int(input("Write a number: "))
+        listed.append(b)
+    
+    file_path = input("Enter the path to write the list: ")
+
+    func(file_path, listed)
+    print("New file created.")

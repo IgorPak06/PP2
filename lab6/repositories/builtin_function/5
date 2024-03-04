@@ -1,0 +1,5 @@
+def all_true(a):
+    return all(a)
+
+tuple_data = (True, 1, "Yes")
+print(all_true(tuple_data))

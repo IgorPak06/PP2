@@ -1,0 +1,20 @@
+#def multiply(numbers):
+    #product = 1
+    #for num in numbers:
+        #product *= num
+    #return product
+
+#n = list(map(int, input("Enter number: ").split()))
+
+#print(multiply(n))
+
+nums = []
+some_n = int(input("Integer to multiply on every number: "))
+size = int(input("Size of list: "))
+
+for i in range(size):
+    n = int(input())
+    nums.append(n)
+
+multiplied_n = list(map(lambda x: x * some_n, nums))
+print(multiplied_n)

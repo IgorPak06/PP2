@@ -1,0 +1,13 @@
+def palindrome(s):
+    reversed_s = ''.join(reversed(s))
+    if reversed_s == s:
+        return True
+    else:
+        return False
+    
+
+string = input()
+if (palindrome(string)):
+    print("It's palindrome")
+else:
+    print("It isn't palindrome")

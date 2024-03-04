@@ -1,0 +1,11 @@
+def copy(source_file, destination_file):
+    with open(source_file, 'r') as file1:
+        with open(destination_file, 'w') as file2:
+            file2.write(file1.read())
+    print("File copied successfully.")
+
+
+if __name__ == "__main__":
+    source_file = input("Enter the source of file: ")
+    destination_file = input("Enter the destination of file path: ")
+    copy(source_file, destination_file)

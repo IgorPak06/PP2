@@ -1,0 +1,8 @@
+def count_char(string):
+    upper_char = sum(1 for char in string if char.isupper())
+    lower_char = sum(1 for char in string if char.islower())
+    return upper_char, lower_char
+
+string = input()
+upper_count, lower_count = count_char(string)
+print(upper_count, lower_count)
